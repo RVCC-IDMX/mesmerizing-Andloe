@@ -467,4 +467,31 @@ body {
     transform: translateX(-50%) rotate(-5760deg);
   }
 }
+
+/* Color Scheme */
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: black;
+  }
+
+  .holder .circle:nth-child(1){
+    background-color: white;
+  }
+  .holder .circle:nth-child(n + 2){
+    border: 13px solid white;
+    border-bottom: none;
+  }
+  
+  .wrapper{
+    background-color:black;
+    outline: 1px solid white;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion) {
+  :root{
+    --anispeed: 120s;
+  }
+}
 /* # Mesmerizing by xposedbones */
